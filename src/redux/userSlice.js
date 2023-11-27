@@ -17,12 +17,15 @@ const initialState = {
          state.isAuth = true;
          return state , console.log(state);
         },
+        resetUser:(state,action)=>{
+          state.isAuth = false
+        }
 
     },
    
     
   });
   
-  export const {addUser } = userSlice.actions
+  export const {addUser ,resetUser} = userSlice.actions
   
   export default userSlice.reducer
