@@ -1,14 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const {isAuth} = useSelector(state=>state.user)
     console.log(isAuth)
+    const dispatch = useDispa
 
 
 
-const rese
+const reset = ()=>{
+
+}
   return (
     <div>
       <ul
